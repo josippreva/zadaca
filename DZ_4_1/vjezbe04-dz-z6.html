@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Kreiranje objekta "pas"
+        var pas = {
+            ime: "Reks",
+            godine: 2
+        };
+
+        // Dodavanje funkcije "zvuk" objektu
+        pas.zvuk = function() {
+            return "AV AV!";
+        };
+
+        // Ispisivanje podataka o psu
+        console.log("Ime psa: " + pas.ime);
+        console.log("Godine psa: " + pas.godine);
+        console.log("Zvuk psa: " + pas.zvuk());
+    </script>
+</body>
+</html>

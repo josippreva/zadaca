@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+      
+        var polje = new Array(1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85);
+
+        
+        console.log("a. Dužina polja:", polje.length);
+		
+		var sortiranoNajveceNajmanje = polje.slice().sort(function(a, b){return b - a;});
+        console.log("b. Polje sortirano od najvećeg ka najmanjem:", sortiranoNajveceNajmanje);
+
+    
+        var sortiranoNajmanjeNajvece = polje.slice().sort(function(a, b){return a - b;});
+        console.log("c. Polje sortirano od najmanjeg ka najvećem:", sortiranoNajmanjeNajvece);
+
+        sortiranoNajmanjeNajvece.pop();
+        console.log("d. Sortirano polje bez zadnjeg člana:", sortiranoNajmanjeNajvece);
+
+        
+        sortiranoNajmanjeNajvece.push(19, 22);
+        console.log("e. Sortirano polje s dodanim članovima:", sortiranoNajmanjeNajvece);
+
+       
+	   
+	   
+        var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+		var polje_final = sortiranoNajmanjeNajvece.concat(polje2);
+        console.log("f. Spojeno polje:", polje_final);
+    </script>
+</body>
+</html>

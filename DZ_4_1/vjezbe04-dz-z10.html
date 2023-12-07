@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function generirajRandomBrojeve(broj1, broj2) {
+            if (typeof broj1 !== 'number' || typeof broj2 !== 'number') {
+                console.log('Molim vas unesite validne brojeve.');
+                return;
+            }
+
+            if (broj1 >= broj2) {
+                console.log('Prvi broj treba biti manji od drugog broja.');
+                return;
+            }
+
+            for (let i = 0; i < 5; i++) {
+                const randomBroj = Math.floor(Math.random() * (broj2 - broj1 + 1) + broj1);
+                console.log(randomBroj);
+            }
+        }
+
+        generirajRandomBrojeve(15, 30);
+    </script>
+</body>
+</html>

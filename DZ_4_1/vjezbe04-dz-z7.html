@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var kvadratFunkcija = function(x) {
+            if (typeof x == "number") {
+                return x * x;
+            } else {
+                console.error("Greška: Nije proslijeđen broj!");
+            }
+        };
+
+        console.log(kvadratFunkcija(4));
+       
+    </script>
+</body>
+</html>
