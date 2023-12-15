@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+ function fja(){
+ var novaboja="#"+Math.floor(Math.random()*256*256*256).toString(16);
+ 
+ document.body.style.backgroundColor=novaboja;
+ 
+ document.getElementById("p1").innerText=novaboja;
+} 
+
+</script>
+
+ <p id="p1">bijela boja</p>
+ <button id="b1" onclick="fja()">Promjeni boju pozadine</button>
+ 
+
+</body>
+</html>

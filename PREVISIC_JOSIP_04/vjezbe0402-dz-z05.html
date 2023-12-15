@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+
+function validacija(reg){
+
+var prototip=/^[AJEKMOT]\d{2}-[AJEKMOT]-\d{3}$/;
+
+
+if(prototip.test(reg)){
+alert("Registracija je ispravna");
+return true;
+
+}else{
+alert("Registracija nije ispravna");
+return false;
+}
+
+
+}
+</script>
+
+<form>
+<label for="reg">UNESITE REGISTRACIJU</label>
+<input type="text" id="reg" >
+<button onclick="validacija(document.getElementById('reg').value)">Validiraj</button>
+</form>
+
+</body>
+</html>

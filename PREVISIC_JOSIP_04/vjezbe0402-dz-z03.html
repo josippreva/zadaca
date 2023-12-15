@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+function fja(){
+
+
+var unos=document.getElementById("ocj").value;
+
+
+ if(unos==1){
+alert("Nedovoljan");
+}else if(unos==2){
+alert("Dovoljan");
+}else if(unos==3){
+alert("Dobar");
+}else if(unos==4){
+alert("VrloDobar");
+}else if(unos==5){
+alert("Odlican");
+}else if(unos=="ocjena"){
+alert("Molimo unesite ocjenu");
+}else{
+alert("Pogresan unos");
+}
+if(unos==1){
+document.getElementById("p1").textContent="Nedovoljan 1";
+}else if(unos==2){
+document.getElementById("p1").innerText="Dovoljan 2";
+
+}else if(unos==3){
+document.getElementById("p1").innerText="Dobar 3";
+
+}else if(unos==4){
+document.getElementById("p1").innerText="VrloDobar 4";
+
+}else if(unos==5){
+document.getElementById("p1").innerText="Odlican 5";
+
+}
+}
+</script>
+
+<form>
+<label for="ocj">Unesite ocjenu 1-5</label>
+<input type="text"  id="ocj" >
+<button onclick="fja()">OK</button>
+<p id="p1">Ovdje ce se ispisat vasa ocjena</p>
+</form>
+
+</body>
+</html>

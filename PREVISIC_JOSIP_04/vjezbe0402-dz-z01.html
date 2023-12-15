@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+ var unos=prompt("Unesite niz brojeva odojite ih zarezom");
+ 
+ var nizBrojeva=unos.split(',');
+ 
+ 
+ document.write("Uneseni niz: "+nizBrojeva);
+ document.write("<br>");
+ var zbroj=0;
+ for(i=0;i<nizBrojeva.length;i++){
+ 
+ var tr=parseFloat(nizBrojeva[i]);
+ zbroj=zbroj+tr;
+ 
+ }
+ var geomSredina=zbroj/nizBrojeva.length;
+ 
+ document.write("Zbroj brojeva uneenog niza je:"+zbroj);
+  document.write("<br>");
+
+  document.write("Geometrijska sredina unesenog niza:"+geomSredina);
+ document.write("<br>");
+
+</script>
+
+
+</body>
+</html>

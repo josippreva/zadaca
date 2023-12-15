@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title></title>
+</head>
+<body>
+ <script type="text/javascript">
+
+ function zbroji() {
+     
+	 var broj1=parseInt(document.getElementById("broj1").value);
+	 var broj2=parseInt(document.getElementById("broj2").value);
+	 
+	 
+	 var zbroj=broj1+broj2;
+	 
+	 document.getElementById("rez").value=zbroj;
+	 
+	 
+	 
+    }
+</script>
+
+<form >
+    <label for="broj1">Unesite prvi broj:</label>
+	<input type="number" id="broj1">
+	<br>
+    <label for="broj2">Unesite drugi broj:</label>
+	<input type="number" id="broj2">
+    <br>
+
+    <button onclick="zbroji()">Zbroji </button>
+    <label for="rezultat">Rezultat:</label>
+	<input type="text" id="rez" readonly>
+	
+	
+	
+</form>
+
+</body>
+</html>
